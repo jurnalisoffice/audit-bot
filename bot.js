@@ -181,7 +181,7 @@ async function handleRecent(interaction) {
       embeds: [simpleEmbed(
         '🕐 Recent changes',
         'No changes recorded yet. Either nothing has happened since the bot started, or the Apps Script hasn\'t run yet.',
-        0x9807270
+        0x980727
       )]
     });
   }
@@ -196,7 +196,7 @@ async function handleRecent(interaction) {
     embeds: [simpleEmbed(
       '🕐 Last 10 changes',
       lines.join('\n\n'),
-      0x9807270
+      0x980727
     )]
   });
 }
@@ -226,7 +226,7 @@ async function handleStats(interaction) {
       { name: '🟡 Modified', value: String(counts.MODIFIED), inline: true },
       { name: '🔵 Renamed',  value: String(counts.RENAMED),  inline: true },
     )
-    .setColor(0x9807270)
+    .setColor(0x980727)
     .setFooter({ text: 'Drive Audit Log • GMT+8' })
     .setTimestamp();
 
@@ -382,7 +382,7 @@ function actionEmoji(action) {
 
 function actionColor(action) {
   const map = { CREATED: 0x57F287, MODIFIED: 0xFEE75C, DELETED: 0xED4245, RENAMED: 0x5865F2, MOVED: 0x5865F2 };
-  return map[action] || 0x9807270;
+  return map[action] || 0x980727;
 }
 
 function truncate(str, max) {
