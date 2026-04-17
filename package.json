@@ -1,0 +1,17 @@
+{
+  "name": "drive-audit-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for Google Drive Audit Log",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "register": "node bot.js --register"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
